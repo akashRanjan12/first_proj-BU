@@ -4,13 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <header>
-      <logo><div class="logo">Logo</div></logo>
+      <!-- background -->
+      <div class="context"></div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- end background -->
+      <!-- data content--------------- -->
+      <div class="data_content" id="data_content">
+        <div id="data01">
+          <p></p>
+          <div class="container">
+            <div class="content">
+              <div class="content__container">
+                <p class="content__container__text">Hello</p>
+                <ul class="content__container__list">
+                  <li class="content__container__list__item">Students</li>
+                  <li class="content__container__list__item">Coders</li>
+                  <li class="content__container__list__item">Viewers</li>
+                  <li class="content__container__list__item">Welcome</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p></p>
+      </div>
+      <!-- end of data content-------- -->
+      <!-- floated image -->
+      <div class="floating-action" id="float_image"></div>
+      <!-- end of lfoated image -->
+      <div class="navbar">
+        <div id="logo" class="logo"></div>
+        <div class="search_icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="search" class="search">
+          <form class="form">
+            <button>
+              <svg
+                width="17"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-labelledby="search">
+                <path
+                  d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                  stroke="currentColor"
+                  stroke-width="1.333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <input class="input" placeholder="Type your text" type="search" />
+          </form>
+        </div>
+        <div id="login_btn">
+          <a href="/" class="bn13">sign in</a>
+        </div>
+        <div id="lists" class="lists">
+          <span>University</span>
+          <span>Board</span>
+          <span>Languages</span>
+          <span>About</span>
+        </div>
+        <div id="list_icon">
+          <input
+            hidden=""
+            class="check-icon"
+            id="check-icon"
+            name="check-icon"
+            type="checkbox" />
+          <label class="icon-menu" for="check-icon">
+            <div class="bar bar--1"></div>
+            <div class="bar bar--2"></div>
+            <div class="bar bar--3"></div>
+          </label>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <div class="parent_container">
+        <a href=""><div id="child_container">BCA</div></a>
+        <a href=""
+          ><div id="child_container">10<sup>th</sup> Board</div></a
+        >
+        <a href=""
+          ><div id="child_container">12<sup>th</sup> Board</div></a
+        >
+        <a href=""><div id="child_container">Bhagalpur University</div></a>
+        <a href=""><div id="child_container">Munger Univetsity</div></a>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
