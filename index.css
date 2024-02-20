@@ -603,7 +603,6 @@ span:after {
   #float_image {
     height: 300px;
     width: 240px;
-    /* top: 500px; */
     top: 500px;
   }
 }
@@ -620,15 +619,4 @@ span:after {
   #float_image {
     top: 40vh;
   }
-}
-
-/* parent section container start */
-@media screen and (min-width: 600px) {
-   .parent_container{
-      display: grid;
-      margin: 20px auto;
-   }
-   #child_container{
-        width: 100%;
-   }
 }
