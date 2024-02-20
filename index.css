@@ -603,7 +603,6 @@ span:after {
   #float_image {
     height: 300px;
     width: 240px;
-    /* top: 500px; */
     top: 500px;
   }
 }
