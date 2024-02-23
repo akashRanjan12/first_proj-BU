@@ -1,372 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beducation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beducation</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-</head>
-
-<body>
-  <header>
-    <!-- background -->
-    <div class="context"></div>
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-    <!-- end background -->
-    <!-- data content--------------- -->
-    <div class="data_content" id="data_content">
-      <div id="data01">
+  <body>
+    <header>
+      <!-- background -->
+      <div class="context"></div>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- end background -->
+      <!-- data content--------------- -->
+      <div class="data_content" id="data_content">
+        <div id="data01">
+          <p></p>
+          <div class="container">
+            <div class="content">
+              <div class="content__container">
+                <p class="content__container__text">Hello</p>
+                <ul class="content__container__list">
+                  <li class="content__container__list__item">Students</li>
+                  <li class="content__container__list__item">Coders</li>
+                  <li class="content__container__list__item">Viewers</li>
+                  <li class="content__container__list__item">Subscribers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <p></p>
-        <div class="container">
-          <div class="content">
-            <div class="content__container">
-              <p class="content__container__text">Hello</p>
-              <ul class="content__container__list">
-                <li class="content__container__list__item">Students</li>
-                <li class="content__container__list__item">Coders</li>
-                <li class="content__container__list__item">Viewers</li>
-                <li class="content__container__list__item">Subscribers</li>
-              </ul>
+      </div>
+      <!-- end of data content-------- -->
+      <!-- floated image -->
+      <div class="floating-action" id="float_image"></div>
+      <!-- end of lfoated image -->
+      <div class="navbar">
+        <div id="logo" class="logo"></div>
+        <div class="search_icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="search" class="search">
+          <form class="form">
+            <button>
+              <svg
+                width="17"
+                height="16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-labelledby="search">
+                <path
+                  d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                  stroke="currentColor"
+                  stroke-width="1.333"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <input class="input" placeholder="Type your text" type="search" />
+          </form>
+        </div>
+        <div id="login_btn">
+          <a href="/" class="bn13">sign in</a>
+        </div>
+        <div id="lists" class="lists">
+          <span>University</span>
+          <span>Board</span>
+          <span>Languages</span>
+          <span>About</span>
+        </div>
+        <div id="list_icon">
+          <input
+            hidden=""
+            class="check-icon"
+            id="check-icon"
+            name="check-icon"
+            type="checkbox" />
+          <label class="icon-menu" for="check-icon">
+            <div class="bar bar--1"></div>
+            <div class="bar bar--2"></div>
+            <div class="bar bar--3"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="parent_container">
+        <a href="">
+          <div id="child_container">BCA</div>
+        </a>
+        <a href="">
+          <div id="child_container">10<sup>th</sup> Board</div>
+        </a>
+        <a href="">
+          <div id="child_container">12<sup>th</sup> Board</div>
+        </a>
+        <a href="">
+          <div id="child_container">Bhagalpur University</div>
+        </a>
+        <a href="">
+          <div id="child_container">Munger Univetsity</div>
+        </a>
+      </div>
+      <hr color="black" />
+      <div class="parent_cards">
+        <div id="card_0" class="card">
+          C
+          <div class="card__content">
+            <p class="card__title">C (Mother Language)</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <div id="style_behind_sub_name">
+            <div class="stars">
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+          </div>
+          <i class="devicon-cplusplus-plain"> C++</i>
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="devicon-java-plain"></i> &nbsp; JAVA
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="fa-solid fa-code"></i>
+          WEB DEV
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="fa-brands fa-github"></i>
+          GITHUB
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="devicon-python-plain"></i>
+          PYTHON
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="devicon-csharp-plain"> C#</i>
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
+            </div>
+          </div>
+        </div>
+        <div id="card_0" class="card">
+          <i class="devicon-visualbasic-plain"> VB</i>
+          <div class="card__content">
+            <p class="card__title">Card Title</p>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <div id="buttons_inside_card">
+              <button>Explore</button>
+              <button>Explore</button>
             </div>
           </div>
         </div>
       </div>
-      <p></p>
+    </main>
+
+    <!-- start footer section -->
+    <div class="custom-shape-divider-top-1708660951">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
     </div>
-    <!-- end of data content-------- -->
-    <!-- floated image -->
-    <div class="floating-action" id="float_image"></div>
-    <!-- end of lfoated image -->
-    <div class="navbar">
-      <div id="logo" class="logo"></div>
-      <div class="search_icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
-      <div id="search" class="search">
-        <form class="form">
-          <button>
-            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-              aria-labelledby="search">
-              <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-                stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-          <input class="input" placeholder="Type your text" type="search" />
-        </form>
-      </div>
-      <div id="login_btn">
-        <a href="/" class="bn13">sign in</a>
-      </div>
-      <div id="lists" class="lists">
-        <span>University</span>
-        <span>Board</span>
-        <span>Languages</span>
-        <span>About</span>
-      </div>
-      <div id="list_icon">
-        <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox" />
-        <label class="icon-menu" for="check-icon">
-          <div class="bar bar--1"></div>
-          <div class="bar bar--2"></div>
-          <div class="bar bar--3"></div>
-        </label>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="parent_container">
-      <a href="">
-        <div id="child_container">BCA</div>
-      </a>
-      <a href="">
-        <div id="child_container">10<sup>th</sup> Board</div>
-      </a>
-      <a href="">
-        <div id="child_container">12<sup>th</sup> Board</div>
-      </a>
-      <a href="">
-        <div id="child_container">Bhagalpur University</div>
-      </a>
-      <a href="">
-        <div id="child_container">Munger Univetsity</div>
-      </a>
-    </div>
-    <hr color="black" />
-    <div class="parent_cards">
-      <div id="card_0" class="card">
-        C
-        <div class="card__content">
-          <p class="card__title">C (Mother Language)</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <div id="style_behind_sub_name">
-          <div class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-          </div>
-        </div>
-        <i class="devicon-cplusplus-plain"> C++</i>
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="devicon-java-plain"></i> &nbsp; JAVA
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="fa-solid fa-code"></i>
-        WEB DEV
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="fa-brands fa-github"></i>
-        GITHUB
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="devicon-python-plain"></i>
-        PYTHON
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="devicon-csharp-plain"> C#</i>
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-      <div id="card_0" class="card">
-        <i class="devicon-visualbasic-plain"> VB</i>
-        <div class="card__content">
-          <p class="card__title">Card Title</p>
-          <p class="card__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco.
-          </p>
-          <div id="buttons_inside_card">
-            <button>Explore</button>
-            <button>Explore</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
 
-  <!-- start footer section -->
-  <div class="custom-shape-divider-top-1708660951">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-    </svg>
-</div>
-</div>
-  <footer>
-    <div class="footer-section">
-      <div class="row1-footer">
-        <p> </p>
-        <div class="social-media">
-          <ul class="social-network social-circle">
-            <li><a href="#" class="icoFacebook media" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#" class="icoTwitter media" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icoLinkedin media" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#" class="icoGIt media" title="Github"><i class="fa fa-github"></i></a></li>
-            <li><a href="#" class="icoIns media" title="instagram"><i class="fa fa-instagram"></i></a></li>
-          </ul>
+    <footer>
+      <div class="footer-section">
+        <div class="row1-footer">
+          <p></p>
+          <div class="social-media">
+            <ul class="social-network social-circle">
+              <li>
+                <a href="#" class="icoFacebook media" title="Facebook"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icoTwitter media" title="Twitter"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icoLinkedin media" title="Linkedin"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icoGIt media" title="Github"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="icoIns media" title="instagram"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <br><br>
+        <br /><br />
 
-      <div class="row2-footer">
-        <div class="website-name">
-          <h1>Beducation</h1>
-          <p style="color: aliceblue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio fugiat iusto
-            corporis qui vero, dolor aliquam veritatis omnis maxime molestias.</p>
-        </div><br>
-
-        <div class="course-lit">
-          <label for="">Course</label>
-          <ul>
-            <li><a href="">c </a></li>
-            <li><a href="">c++ </a></li>
-            <li><a href="">java</a></li>
-            <li><a href="">python</a></li>
-            <li><a href="">Data Structure</a></li>
-            <li><a href="">DBMS</a></li>
-            <li><a href="">HTML</a></li>
-            <li><a href="">CSS</a></li>
-          </ul>
-        </div><br>
-
-        <div class="board">
-          <label for="">Boards</label>
-          <ul>
-            <li><a href="">10<sup>th</sup> Board</a></li>
-            <li><a href="">12<sup>th</sup> Board</a></li>
-            <li><a href="">Bhagalpur University</a></li>
-            <li><a href="">Munger University</a></li>
-          </ul>
-        </div><br>
-
-        <div class="contact">
-          <label for="">Contact</label>
-          <div class="contact-detail">
-            <p><i class="fas fa-home me-3"></i> Bhagalpur, Bihar, India</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
+        <div class="row2-footer">
+          <div class="website-name">
+            <h1>Beducation</h1>
+            <p style="color: aliceblue">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Distinctio fugiat iusto corporis qui vero, dolor aliquam veritatis
+              omnis maxime molestias.
             </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
           </div>
-        </div><br>
+          <br />
 
+          <div class="course-lit">
+            <label for="">Course</label>
+            <ul>
+              <li><a href="">c </a></li>
+              <li><a href="">c++ </a></li>
+              <li><a href="">java</a></li>
+              <li><a href="">python</a></li>
+              <li><a href="">Data Structure</a></li>
+              <li><a href="">DBMS</a></li>
+              <li><a href="">HTML</a></li>
+              <li><a href="">CSS</a></li>
+            </ul>
+          </div>
+          <br />
 
-      </div><br>
-      <hr><br>
+          <div class="board">
+            <label for="">Boards</label>
+            <ul>
+              <li>
+                <a href="">10<sup>th</sup> Board</a>
+              </li>
+              <li>
+                <a href="">12<sup>th</sup> Board</a>
+              </li>
+              <li><a href="">Bhagalpur University</a></li>
+              <li><a href="">Munger University</a></li>
+            </ul>
+          </div>
+          <br />
 
-      <div class="registration">
-        <p>The © Copyright reserved by Beducation 2024 </p>
+          <div class="contact">
+            <label for="">Contact</label>
+            <div class="contact-detail">
+              <p><i class="fas fa-home me-3"></i> Bhagalpur, Bihar, India</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <hr />
+        <br />
+
+        <div class="registration">
+          <p>The © Copyright reserved by Beducation 2024</p>
+        </div>
       </div>
-    </div>
-  </footer>
-  <!-- end footer section -->
-  <script src="index.js"></script>
-</body>
+    </footer>
+    <!-- end footer section -->
+    <script src="index.js"></script>
+  </body>
 </html>
