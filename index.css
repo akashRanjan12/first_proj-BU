@@ -503,6 +503,29 @@ span:after {
 }
 /* end of navbar------------------------------- */
 /* main part of index.html--- */
+/* heading */
+.info_about_cources {
+  padding-top: 20px;
+  a {
+    cursor: pointer;
+    color: rgb(75, 0, 145);
+    font-weight: 800;
+    font-size: 1.1em;
+  }
+  a:hover {
+    color: #0050c8;
+  }
+}
+#heading_01 {
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 20px;
+  font-size: clamp(1.7em, 3vw, 2.5em);
+}
+#parag_01 {
+  font-size: clamp(1.2em, 3vw, 1.4em);
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 10px;
+}
 /* course lists */
 .parent_container {
   padding-top: 20px;
@@ -537,22 +560,23 @@ span:after {
 }
 /* button in card */
 .btn01 {
-  width: 110px;
+  width: 120px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  background-color: rgb(20, 59, 255);
+  background-color: transparent;
+  border: 2px double rgb(123, 0, 255);
   border-radius: 30px;
   color: rgb(19, 19, 19);
   font-weight: 600;
-  border: none;
   position: relative;
   cursor: pointer;
   transition-duration: 0.2s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
   padding-left: 8px;
+  padding-right: 5px;
   transition-duration: 0.5s;
 }
 
@@ -566,7 +590,7 @@ span:after {
 }
 
 .btn01:hover {
-  background-color: rgb(79, 48, 254);
+  background-color: rgb(103, 21, 255);
   transition-duration: 0.5s;
 }
 
