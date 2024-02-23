@@ -521,7 +521,6 @@ span:after {
 }
 #child_container {
   height: auto;
-  width: fit-content;
   position: relative;
   padding: 10px 20px;
   border-radius: 7px;
@@ -791,3 +790,237 @@ button:hover::after {
     top: 40vh;
   }
 }
+
+/* footer section  start*/
+
+/* footer social icons */
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.custom-shape-divider-top-1708660951 {
+  position: absolute;
+
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1708660951 svg {
+  position: relative;
+  display: block;
+  width: calc(162% + 1.3px);
+  height: 87px;
+}
+
+.custom-shape-divider-top-1708660951 .shape-fill {
+  fill:#A4A4F5;
+}
+footer{
+background-image: linear-gradient(#003554,#006DA4);
+padding: 10px;
+
+}
+
+.row1-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:70px;
+  color: #3fbe00;
+  z-index:1;
+}
+
+
+.social-network a.icoIns:hover {
+  background: linear-gradient(90deg, rgba(255,188,0,1) 0%, rgba(199,43,23,0.9641106442577031) 56%, rgba(151,10,138,0.9080882352941176) 100%, rgba(166,207,255,0.5243347338935574) 100%, rgba(0,159,255,0.9501050420168067) 100%);
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoGIt:hover {
+  background-color: #2a2a2a;
+}
+
+.social-network a.icoVimeo:hover {
+  background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i,
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i,
+.social-network a.icoVimeo:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #fff;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.media {
+  background-color: #a6a6a6;
+}
+
+.row2-footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2-footer .website-name{
+   width: 25%;
+   line-height: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 15px;
+}
+.row2-footer .website-name h1{
+  color: rgb(255, 201, 5);
+}
+
+.row2-footer label{
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(255, 247, 0);
+}
+
+.row2-footer ul li{
+  list-style: none;
+}
+.row2-footer ul li a{
+   color:aliceblue;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 2px;
+}
+.row2-footer ul li a:hover{
+  color: orange;
+}
+
+.row2-footer .contact-detail{
+  color:aliceblue;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row2-footer .contact-detail i{
+  color:rgb(135, 219, 0);
+}
+
+.registration p{
+   color:rgb(212, 255, 0);
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing:2px;
+}
+
+/* footer responsive start */
+@media screen and (max-width: 920px){
+.row2-footer{
+display: grid;
+grid-template-columns: repeat(2,auto);
+}
+.row2-footer .website-name{
+  width:75%;
+
+}
+}
+
+/* tab responsive */
+@media screen and (max-width:600px){
+
+  .row1-footer{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+ 
+  }
+  
+}
+
+/* mobile responsive */
+
+
+@media screen and (max-width:400px){
+
+  .row2-footer{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    }
+    .row2-footer .website-name{
+      width:75%;
+    
+    }
+  
+}
+/* footer responsive end */
+
+/* end fooetr section */
