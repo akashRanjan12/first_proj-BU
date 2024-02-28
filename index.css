@@ -691,7 +691,7 @@ span:after {
   display: flex;
   justify-content: space-evenly;
 }
-button {
+#btn0 {
   position: relative;
   margin: 0;
   padding: 10px;
@@ -714,7 +714,7 @@ button {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-button:hover {
+#btn0:hover {
   animation: sh0 0.5s ease-in-out both;
 }
 
@@ -740,13 +740,13 @@ button:hover {
   }
 }
 
-button:hover span {
+#btn0:hover span {
   animation: storm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
 
-button::before,
-button::after {
+#btn0::before,
+#btn0::after {
   content: "";
   position: absolute;
   right: 0;
@@ -762,24 +762,225 @@ button::after {
   transform: translate(100%, -25%) translate3d(0, 0, 0);
 }
 
-button:hover::before,
-button:hover::after {
+#btn0:hover::before,
+#btn0:hover::after {
   opacity: 0.15;
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1),
     opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
 }
 
-button:hover::before {
+#btn0:hover::before {
   transform: translate3d(50%, 0, 0) scale(0.9);
 }
 
-button:hover::after {
+#btn0:hover::after {
   transform: translate(50%, 0) scale(1.1);
 }
 
 /* endcards */
 
+/* login form start=----------------------------------- */
+/* header stert */
+.log_in {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  #button_home {
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(92, 92, 246);
+    border: none;
+    padding-left: 2em;
+  }
+  #logo_login {
+    padding-right: 1em;
+    font-size: clamp(1em, 3vw, 2.5em);
+  }
+  button:hover {
+    background-color: rgb(69, 69, 230);
+    color: rgb(211, 211, 211);
+  }
+  #faq {
+    padding-right: 2em;
+    height: 2.5em;
+  }
+}
+/* header end */
+/* card start */
+#ani_per {
+  height: 35%;
+}
+#dir_s {
+  height: 90vh;
+  width: clamp(35vw, 40%, 35em);
+}
+/* left card */
+.left_login_card {
+  background-color: #3498db;
+}
+/* riht card */
+.card_login_container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.card-container_login {
+  perspective: 1000px;
+  width: 100%;
+  height: 100%;
+}
+.card_login {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card_login .side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card_login .front {
+  background-color: #01416c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card_login .back {
+  background-color: #01416c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+.flip-button {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+/* front card(login form) */
+.front {
+  display: flex;
+  flex-direction: column;
+}
+#fliping_time {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-around;
+}
+.form-control {
+  background-color: transparent;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  border-radius: 8px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 800;
+}
+.input-field {
+  position: relative;
+  width: 100%;
+}
+
+.login_input {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  height: 45px;
+  border: 1.5px solid #ecedec;
+  background: transparent;
+  padding-left: 10px;
+  color: orange;
+  font-size: 1.15em;
+}
+.login_input:focus {
+  border: 2px solid rgb(0, 2, 100);
+}
+.input-field .label {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+.input-field .login_input:focus ~ .label,
+.input-field .login_input:valid ~ .label {
+  top: 5px;
+  left: 5px;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(0, 2, 100);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.submit-btn {
+  margin-top: 15px;
+  height: 55px;
+  background: #f2f2f2;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
+  box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  cursor: pointer;
+}
+#sign_in_btn {
+  cursor: pointer;
+}
+#sign_in_btn:hover {
+  color: orange;
+}
+.submit-btn:hover {
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+}
+
+/* front card end */
+/* ,login form end =------------------------------------ */
 /* end of main of index.html */
+
+/* @media (min-width: 750px) and (max-width: 1025px) {
+  .card_login_container {
+    #dir_s {
+      height: 60vh;
+    }
+    #ani_per {
+      display: none;
+    }
+  }
+} */
+@media (max-width: 1024px) {
+  .card_login_container {
+    flex-direction: column-reverse;
+  }
+  #dir_s {
+    width: 100%;
+  }
+}
 @media (max-width: 750px) {
   /* navbar */
   #lists {
@@ -813,7 +1014,11 @@ button:hover::after {
     top: 40vh;
   }
 }
-
+@media (max-height: 568px) {
+  #dir_s {
+    height: 110vh;
+  }
+}
 /* footer section  start*/
 
 /* footer social icons */
