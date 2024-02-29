@@ -242,11 +242,11 @@ body {
 /* end of the background animation */
 /* floated image */
 #float_image {
-  background-image: url("images/home_image.png");
+  background-image: url("./images/c85319fa-ac14-455b-b5d1-940b764a8415.png");
   background-position: center;
   background-size: cover;
-  height: 340px;
-  width: 260px;
+  height: 380px;
+  width: 400px;
   position: absolute;
   top: 45%;
   right: 10px;
@@ -625,7 +625,7 @@ span:after {
   width: clamp(230px, 70vw, 300px);
   height: 270px;
   border-radius: 10px;
-  background-color: #bbcef1;
+  background-color: #6a7eee82;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,7 +651,7 @@ span:after {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #8aaee0;
+  background-color: #638ECB;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -681,6 +681,26 @@ span:after {
   font-family: "Times New Roman", Times, serif;
   padding-bottom: 12px;
 }
+
+
+#buttons_inside_card button{
+  padding: 10px;
+  background-color: #01416c;
+  color: #ffffff;
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+  width: 100px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s linear;
+}
+#buttons_inside_card button:hover{
+  background-color: transparent;
+  border: 1px solid black;
+  color: #000000;
+}
+
 /* style inside card */
 #style_behind_sub_name {
   position: absolute;
@@ -778,6 +798,20 @@ span:after {
 }
 
 /* endcards */
+
+/* main starr */
+.info_about_cources{
+  width: 95%;
+  margin: auto;
+  line-height: 1.5;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* end main */
+
+
+
+
 
 /* login form start=----------------------------------- */
 /* header stert */
@@ -996,7 +1030,7 @@ span:after {
   /* floating image */
   #float_image {
     height: 300px;
-    width: 240px;
+    width: 340px;
     top: 500px;
   }
 }
@@ -1053,10 +1087,11 @@ ul.social-network li {
 }
 
 .custom-shape-divider-top-1708660951 .shape-fill {
-  fill: #a4a4f5;
+  fill:#B2B2F9;
 }
+
 footer {
-  background-image: linear-gradient(#003554, #006da4);
+  background-image: linear-gradient(rgb(21 62 119), rgb(57, 88, 134));
   padding: 10px;
 }
 
@@ -1156,7 +1191,7 @@ a.socialIcon:hover,
 }
 
 .media {
-  background-color: #a6a6a6;
+  background-color: #0055ff48;
 }
 
 .row2-footer {
@@ -1214,6 +1249,173 @@ a.socialIcon:hover,
   letter-spacing: 2px;
 }
 
+/* login footer  start*/
+
+  
+  .login-card{
+    width: 265px;
+    height: 221px;
+    background-color:  #205081;
+    border-radius: 25px;
+    box-shadow: 2px 2px 15px rgb(193, 193, 193);
+    margin: 8px 0px;
+  }
+  .instruction-text {
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: px;
+  }
+  
+  .login-card button {
+    cursor: pointer;
+  }
+  
+  .normal-signin {
+      padding: 7px;
+      font-size: 17px;
+      width: 70%;
+      margin-top: 18px;
+      margin-left: 37px;
+      border: 2px solid transparent;
+      border-radius: 5em;
+      background-color: #1b77da;
+      color: #f2f2f2;
+      font-weight: bold;
+      font-family: sans-serif;
+      transition: 0.2s;
+
+  }
+  
+  .normal-signin:hover {
+    background-color: transparent;
+    color: #1b77da;
+    border: 2px solid #1b77da;
+  }
+  
+  .create-account {
+      padding: 7px;
+      font-size: 17px;
+      width: 70%;
+      margin-top: 5px;
+      margin-left: 37px;
+      margin-bottom: 5px;
+      border: 2px solid transparent;
+      border-radius: 5em;
+      background-color: #e8e8e8;
+      color: #1b77da;
+      font-weight: bold;
+      font-family: sans-serif;
+      transition: 0.2s;
+  }
+  
+  .create-account:hover {
+    background-color: transparent;
+    color: #1b77da;
+    border: 2px solid #1b77da;
+  }
+  
+  .alternate-login {
+  background-color:  #205081;;
+      border-radius: 5em;
+      margin: auto;
+      width: 62%;
+  }
+  
+  .m-sign {
+      padding: 3px;
+      font-size: 9px;
+      height: 36px;
+      width: 43px;
+      border-radius: 5em;
+      margin-top: 0px;
+      background-color: #7FBA00;
+      border: 2px solid transparent;
+      transition: 0.2s;
+  }
+  
+  .m-sign svg {
+    width: 24px;
+      height: 27px;
+      margin-top: -2px;
+      margin-left: -2px;
+      fill: #f2f2f2;
+  }
+  
+  
+  .m-sign:hover {
+    background-color: transparent;
+    border: 2px solid #7FBA00;
+  }
+  
+  .m-sign:hover svg {
+    fill: #7FBA00;
+  }
+  
+  .g-sign {
+      padding: 3px;
+      font-size: 14px;
+      height: 40px;
+      width: 40px;
+      border-radius: 5em;
+      margin-top: 5px;
+      margin-left: 15px;
+      background-color: #000000;
+      border: 2px solid transparent;
+      transition: 0.2s;
+  }
+  
+  .g-sign svg {
+   width: 25px;
+      height: 25px;
+      margin-top: -1px;
+      margin-left: -1px;
+      fill: #f2f2f2;
+  }
+
+  
+  .g-sign:hover {
+    background-color: transparent;
+    border: 2px solid #DB4437;
+  }
+  
+  .g-sign:hover svg {
+    fill: #DB4437;
+  }
+  
+  .a-sign {
+    padding: 7px;
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+    border-radius: 5em;
+    margin-top: 5px;
+    margin-left: 15px;
+    background-color: #000000;
+    border: 2px solid transparent;
+    transition: 0.2s;
+  }
+  
+  .a-sign svg {
+    width: 25px;
+    height: 25px;
+    margin-top: -1px;
+    margin-left: -1px;
+    fill: #ffff;
+  }
+  
+  .a-sign:hover {
+    background-color: transparent;
+    border: 2px solid #ffff;
+  }
+  
+  .a-sign:hover svg {
+    fill: #000000;
+  }
+
+/* login footer end */
+
 /* footer responsive start */
 @media screen and (max-width: 920px) {
   .row2-footer {
@@ -1237,9 +1439,14 @@ a.socialIcon:hover,
 /* mobile responsive */
 
 @media screen and (max-width: 400px) {
+  .row1-footer{
+    position: relative;
+    top: 40px;
+  }
   .row2-footer {
     display: grid;
     grid-template-columns: repeat(1, auto);
+    margin: auto 50px;
   }
   .row2-footer .website-name {
     width: 75%;
