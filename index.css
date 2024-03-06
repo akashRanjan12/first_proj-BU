@@ -7,15 +7,55 @@
 body {
   background: linear-gradient(
     to top,
-    rgb(152, 152, 255, 0.6) 0%,
-    rgb(73, 73, 228, 0.6) 40%,
+    rgba(121, 121, 255, 0.6) 0%,
+    rgba(71, 71, 249, 0.6) 40%,
     rgb(61, 61, 232, 0.6) 60%,
-    rgb(163, 163, 255, 0.6) 100%
+    rgba(121, 121, 255, 0.6) 100%
   );
 }
+
 a {
   text-decoration: none;
 }
+/* board part of backgron */
+.main_of_10th {
+  animation: theme 21s linear infinite;
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(0, 0, 0, 0.05);
+    animation: back 90s linear infinite;
+  }
+
+  &:after {
+    left: 15vw;
+  }
+
+  &:before {
+    right: 15vw;
+    animation-delay: -30s;
+    animation-direction: reverse;
+  }
+}
+
+@keyframes back {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* end of board part of background */
 /* background home animation */
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 * {
@@ -152,7 +192,7 @@ body {
   font-weight: 600;
   overflow: hidden;
   height: 40px;
-  padding: 0 40px;
+  /* padding: 0 40px; */
 }
 
 .content__container:after,
@@ -521,11 +561,58 @@ span:after {
   padding-left: 20px;
   font-size: clamp(1.7em, 3vw, 2.5em);
 }
-#parag_01 {
-  font-size: clamp(1.2em, 3vw, 1.4em);
-  font-family: "Times New Roman", Times, serif;
-  padding-left: 10px;
+.content01 {
+  font-size: clamp(1em, 3vw, 1.2em);
+  margin-right: 3em;
+  margin-left: 0.7em;
 }
+
+/* toltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.tooltip:hover .tooltiptext {
+  display: block;
+  opacity: 1;
+}
+.tooltiptext {
+  display: none;
+  height: auto;
+  width: 250px;
+  background-color: rgb(176, 156, 255);
+  box-shadow: 8px 8px 10px 0px black;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 30%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: rgb(176, 156, 255) transparent transparent transparent;
+}
+/* data of tooltip */
+#bb_10th_list {
+  column-count: 2;
+  padding-left: 20px;
+  list-style: none;
+}
+/* end toltip */
 /* course lists */
 .parent_container {
   padding-top: 20px;
@@ -566,10 +653,10 @@ span:after {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  background-color: transparent;
+  background-color: rgb(71, 9, 243, 0.5);
   border: 2px double rgb(123, 0, 255);
   border-radius: 30px;
-  color: rgb(19, 19, 19);
+  color: rgb(2, 1, 23);
   font-weight: 600;
   position: relative;
   cursor: pointer;
@@ -579,7 +666,9 @@ span:after {
   padding-right: 5px;
   transition-duration: 0.5s;
 }
-
+.btn01 {
+  background-color: rgb(71, 9, 243);
+}
 .svgIcon {
   height: 25px;
   transition-duration: 1.5s;
@@ -625,7 +714,7 @@ span:after {
   width: clamp(230px, 70vw, 300px);
   height: 270px;
   border-radius: 10px;
-  background-color: #6a7eee82;
+  background-color: #8a69f7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,7 +740,7 @@ span:after {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #638ECB;
+  background-color: rgb(99, 142, 203, 0.7);
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -682,8 +771,7 @@ span:after {
   padding-bottom: 12px;
 }
 
-
-#buttons_inside_card button{
+#buttons_inside_card button {
   padding: 10px;
   background-color: #01416c;
   color: #ffffff;
@@ -695,7 +783,7 @@ span:after {
   font-weight: 600;
   transition: all 0.2s linear;
 }
-#buttons_inside_card button:hover{
+#buttons_inside_card button:hover {
   background-color: transparent;
   border: 1px solid black;
   color: #000000;
@@ -800,18 +888,14 @@ span:after {
 /* endcards */
 
 /* main starr */
-.info_about_cources{
+.info_about_cources {
   width: 95%;
   margin: auto;
   line-height: 1.5;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* end main */
-
-
-
-
 
 /* login form start=----------------------------------- */
 /* header stert */
@@ -893,6 +977,7 @@ span:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   transform: rotateY(180deg);
 }
 .flip-button {
@@ -992,21 +1077,162 @@ span:after {
 .submit-btn:hover {
   box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
 }
+/* back card newton candle */
+.newtons-cradle {
+  --uib-size: 60px;
+  --uib-speed: 1.2s;
+  --uib-color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--uib-size);
+  height: var(--uib-size);
+}
 
-/* front card end */
-/* ,login form end =------------------------------------ */
-/* end of main of index.html */
+.newtons-cradle__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  transform-origin: center top;
+}
 
-/* @media (min-width: 750px) and (max-width: 1025px) {
-  .card_login_container {
-    #dir_s {
-      height: 60vh;
-    }
-    #ani_per {
-      display: none;
-    }
+.newtons-cradle__dot::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 25%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+}
+
+.newtons-cradle__dot:first-child {
+  animation: swing var(--uib-speed) linear infinite;
+}
+
+.newtons-cradle__dot:last-child {
+  animation: swing2 var(--uib-speed) linear infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
   }
-} */
+
+  25% {
+    transform: rotate(70deg);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    animation-timing-function: ease-out;
+  }
+
+  75% {
+    transform: rotate(-70deg);
+    animation-timing-function: ease-in;
+  }
+}
+/* bb 10th board */
+
+#main_of_10th {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 38rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: sliding 20s infinite;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide.one {
+  background-image: url("images/s1.jpg");
+}
+.slide.two {
+  background-image: url("images/s2.jpg");
+}
+.slide.three {
+  background-image: url("images/s3.jpg");
+}
+.slide.four {
+  background-image: url("images/s4.jpg");
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-200%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+
+  50% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  70% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-300%);
+  }
+  90% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @media (max-width: 1024px) {
   .card_login_container {
     flex-direction: column-reverse;
@@ -1032,6 +1258,11 @@ span:after {
     height: 300px;
     width: 340px;
     top: 500px;
+  }
+}
+@media (max-width: 430px) {
+  .tooltip:hover .tooltiptext {
+    display: none;
   }
 }
 @media (max-width: 400px) {
@@ -1087,7 +1318,7 @@ ul.social-network li {
 }
 
 .custom-shape-divider-top-1708660951 .shape-fill {
-  fill:#B2B2F9;
+  fill: #b2b2f9;
 }
 
 footer {
@@ -1251,168 +1482,164 @@ a.socialIcon:hover,
 
 /* login footer  start*/
 
-  
-  .login-card{
-    width: 265px;
-    height: 221px;
-    background-color:  #205081;
-    border-radius: 25px;
-    box-shadow: 2px 2px 15px rgb(193, 193, 193);
-    margin: 8px 0px;
-  }
-  .instruction-text {
-    color: rgb(150, 150, 150);
-    text-align: center;
-    font-size: 12px;
-    margin-top: 10px;
-    margin-bottom: px;
-  }
-  
-  .login-card button {
-    cursor: pointer;
-  }
-  
-  .normal-signin {
-      padding: 7px;
-      font-size: 17px;
-      width: 70%;
-      margin-top: 18px;
-      margin-left: 37px;
-      border: 2px solid transparent;
-      border-radius: 5em;
-      background-color: #1b77da;
-      color: #f2f2f2;
-      font-weight: bold;
-      font-family: sans-serif;
-      transition: 0.2s;
+.login-card {
+  width: 250px;
+  height: auto;
+  background-color: #205081;
+  border-radius: 25px;
+  box-shadow: 2px 2px 15px rgb(193, 193, 193);
+  margin: 8px 0px;
+}
+.instruction-text {
+  color: rgb(150, 150, 150);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: px;
+}
 
-  }
-  
-  .normal-signin:hover {
-    background-color: transparent;
-    color: #1b77da;
-    border: 2px solid #1b77da;
-  }
-  
-  .create-account {
-      padding: 7px;
-      font-size: 17px;
-      width: 70%;
-      margin-top: 5px;
-      margin-left: 37px;
-      margin-bottom: 5px;
-      border: 2px solid transparent;
-      border-radius: 5em;
-      background-color: #e8e8e8;
-      color: #1b77da;
-      font-weight: bold;
-      font-family: sans-serif;
-      transition: 0.2s;
-  }
-  
-  .create-account:hover {
-    background-color: transparent;
-    color: #1b77da;
-    border: 2px solid #1b77da;
-  }
-  
-  .alternate-login {
-  background-color:  #205081;;
-      border-radius: 5em;
-      margin: auto;
-      width: 62%;
-  }
-  
-  .m-sign {
-      padding: 3px;
-      font-size: 9px;
-      height: 36px;
-      width: 43px;
-      border-radius: 5em;
-      margin-top: 0px;
-      background-color: #7FBA00;
-      border: 2px solid transparent;
-      transition: 0.2s;
-  }
-  
-  .m-sign svg {
-    width: 24px;
-      height: 27px;
-      margin-top: -2px;
-      margin-left: -2px;
-      fill: #f2f2f2;
-  }
-  
-  
-  .m-sign:hover {
-    background-color: transparent;
-    border: 2px solid #7FBA00;
-  }
-  
-  .m-sign:hover svg {
-    fill: #7FBA00;
-  }
-  
-  .g-sign {
-      padding: 3px;
-      font-size: 14px;
-      height: 40px;
-      width: 40px;
-      border-radius: 5em;
-      margin-top: 5px;
-      margin-left: 15px;
-      background-color: #000000;
-      border: 2px solid transparent;
-      transition: 0.2s;
-  }
-  
-  .g-sign svg {
-   width: 25px;
-      height: 25px;
-      margin-top: -1px;
-      margin-left: -1px;
-      fill: #f2f2f2;
-  }
+.login-card button {
+  cursor: pointer;
+}
 
-  
-  .g-sign:hover {
-    background-color: transparent;
-    border: 2px solid #DB4437;
-  }
-  
-  .g-sign:hover svg {
-    fill: #DB4437;
-  }
-  
-  .a-sign {
-    padding: 7px;
-    font-size: 14px;
-    height: 40px;
-    width: 40px;
-    border-radius: 5em;
-    margin-top: 5px;
-    margin-left: 15px;
-    background-color: #000000;
-    border: 2px solid transparent;
-    transition: 0.2s;
-  }
-  
-  .a-sign svg {
-    width: 25px;
-    height: 25px;
-    margin-top: -1px;
-    margin-left: -1px;
-    fill: #ffff;
-  }
-  
-  .a-sign:hover {
-    background-color: transparent;
-    border: 2px solid #ffff;
-  }
-  
-  .a-sign:hover svg {
-    fill: #000000;
-  }
+.normal-signin {
+  padding: 7px;
+  font-size: 17px;
+  width: 70%;
+  margin-top: 18px;
+  margin-left: 37px;
+  border: 2px solid transparent;
+  border-radius: 5em;
+  background-color: #1b77da;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.2s;
+}
+
+.normal-signin:hover {
+  background-color: transparent;
+  color: #1b77da;
+  border: 2px solid #1b77da;
+}
+
+.create-account {
+  padding: 7px;
+  font-size: 17px;
+  width: 70%;
+  margin-top: 5px;
+  margin-left: 37px;
+  margin-bottom: 5px;
+  border: 2px solid transparent;
+  border-radius: 5em;
+  background-color: #e8e8e8;
+  color: #1b77da;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.2s;
+}
+
+.create-account:hover {
+  background-color: transparent;
+  color: #1b77da;
+  border: 2px solid #1b77da;
+}
+
+.alternate-login {
+  background-color: #205081;
+  border-radius: 5em;
+  margin: auto;
+  width: 62%;
+}
+
+.m-sign {
+  padding: 3px;
+  font-size: 9px;
+  height: 36px;
+  width: 43px;
+  border-radius: 5em;
+  margin-top: 0px;
+  background-color: #7fba00;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.m-sign svg {
+  width: 24px;
+  height: 27px;
+  margin-top: -2px;
+  margin-left: -2px;
+  fill: #f2f2f2;
+}
+
+.m-sign:hover {
+  background-color: transparent;
+  border: 2px solid #7fba00;
+}
+
+.m-sign:hover svg {
+  fill: #7fba00;
+}
+
+.g-sign {
+  padding: 3px;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5em;
+  margin-top: 5px;
+  margin-left: 15px;
+  background-color: #000000;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.g-sign svg {
+  width: 25px;
+  height: 25px;
+  margin-top: -1px;
+  margin-left: -1px;
+  fill: #f2f2f2;
+}
+
+.g-sign:hover {
+  background-color: transparent;
+  border: 2px solid #db4437;
+}
+
+.g-sign:hover svg {
+  fill: #db4437;
+}
+
+.a-sign {
+  padding: 7px;
+  font-size: 14px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5em;
+  margin-top: 5px;
+  margin-left: 15px;
+  background-color: #000000;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.a-sign svg {
+  width: 25px;
+  height: 25px;
+  margin-top: -1px;
+  margin-left: -1px;
+  fill: #ffff;
+}
+
+.a-sign:hover {
+  background-color: transparent;
+  border: 2px solid #ffff;
+}
+
+.a-sign:hover svg {
+  fill: #000000;
+}
 
 /* login footer end */
 
@@ -1439,7 +1666,7 @@ a.socialIcon:hover,
 /* mobile responsive */
 
 @media screen and (max-width: 400px) {
-  .row1-footer{
+  .row1-footer {
     position: relative;
     top: 40px;
   }
