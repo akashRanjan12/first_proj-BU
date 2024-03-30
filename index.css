@@ -332,6 +332,34 @@ body {
 }
 /* end of floated image */
 /* navbar--------- */
+/* inslists */
+.inlist-of-uni {
+  display: none;
+  position: absolute;
+  right: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
+  color: black;
+  height: auto;
+  width: max-content;
+  border-bottom: 2px rgb(0, 0, 183) solid;
+  animation: down_list 0.2s linear;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+#inlist-of-uni {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#inlist-of-uni:hover {
+  background-color: rgba(24, 0, 240, 0.55);
+  color: orange;
+}
+.list-of-uni:hover {
+  .inlist-of-uni {
+    display: block;
+  }
+}
+/* end inlist */
 .navbar {
   height: 8vh;
   width: 100%;
@@ -355,9 +383,7 @@ body {
 .navbar:hover {
   background-color: rgba(34, 34, 207, 0.5);
 }
-#list_icon {
-  display: none;
-}
+
 /* search bar----------- */
 /* search icon when responsive */
 .search_icon {
@@ -508,62 +534,48 @@ span:after {
 }
 /* search (list) menu icon----------- */
 
-.icon-menu {
-  --gap: 5px;
-  --height-bar: 2.5px;
-  --pos-y-bar-one: 0;
-  --pos-y-bar-three: 0;
-  --scale-bar: 1;
-  --rotate-bar-one: 0;
-  --rotate-bar-three: 0;
-  width: 20px;
+/* works only on a dark background with these paremeters*/
+
+.button00 {
+  border-radius: 50%;
+  border: none;
   display: flex;
-  flex-direction: column;
-  gap: var(--gap);
+  place-items: center;
+  background-color: transparent;
   cursor: pointer;
-  position: relative;
+  display: none;
 }
 
-.bar {
-  position: relative;
-  height: var(--height-bar);
-  width: 100%;
-  border-radius: 0.5rem;
-  background-color: white;
+.button00 > svg {
+  border-radius: inherit;
+  padding: 0.5rem;
+  fill: #fff;
+  /* SVG color */
+  width: 38px;
+  /* default width 32px */
+  height: 38px;
+  /* default height 32px */
 }
 
-.bar--1 {
-  top: var(--pos-y-bar-one);
-  transform: rotate(var(--rotate-bar-one));
-  transition: top 200ms 100ms, transform 100ms;
+.button00 > svg:active {
+  background-color: rgba(65, 65, 65, 0.5);
 }
 
-.bar--2 {
-  transform: scaleX(var(--scale-bar));
-  transition: transform 150ms 100ms;
+.button00 > svg:not(:active) {
+  animation: fadeOut 0.9s;
 }
 
-.bar--3 {
-  bottom: var(--pos-y-bar-three);
-  transform: rotate(var(--rotate-bar-three));
-  transition: bottom 200ms 100ms, transform 100ms;
+@keyframes fadeOut {
+  0% {
+    outline: 1px solid rgba(90, 90, 90, 0.5);
+    /* If you use border it will take space inside and slightly move the SVG */
+  }
+
+  100% {
+    background-color: transparent;
+  }
 }
 
-.check-icon:checked + .icon-menu > .bar--1 {
-  transition: top 200ms, transform 200ms 100ms;
-}
-
-.check-icon:checked + .icon-menu > .bar--3 {
-  transition: bottom 200ms, transform 200ms 100ms;
-}
-
-.check-icon:checked + .icon-menu {
-  --pos-y-bar-one: calc(var(--gap) + var(--height-bar));
-  --pos-y-bar-three: calc(var(--gap) + var(--height-bar));
-  --scale-bar: 0;
-  --rotate-bar-one: 45deg;
-  --rotate-bar-three: -45deg;
-}
 /* end of navbar------------------------------- */
 /* navbar list  */
 .nav {
@@ -998,7 +1010,7 @@ span:after {
 }
 /* left card */
 .left_login_card {
-  background-color: #006494;
+  background: linear-gradient(90deg, rgb(153, 32, 239), rgb(60, 132, 164));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1093,7 +1105,52 @@ ul {
   height: 50px;
   border-radius: 20%;
   color: #4d4d4d;
-  background-color: #ffff;
+  background-image: radial-gradient(
+      circle at 29% 25%,
+      hsla(280, 0%, 87%, 0.1) 0%,
+      hsla(280, 0%, 87%, 0.1) 54%,
+      transparent 54%,
+      transparent 89%,
+      transparent 89%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 35% 35%,
+      hsla(280, 0%, 87%, 0.1) 0%,
+      hsla(280, 0%, 87%, 0.1) 2%,
+      transparent 2%,
+      transparent 48%,
+      transparent 48%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 47% 56%,
+      hsla(280, 0%, 87%, 0.1) 0%,
+      hsla(280, 0%, 87%, 0.1) 43%,
+      transparent 43%,
+      transparent 76%,
+      transparent 76%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 48% 84%,
+      hsla(280, 0%, 87%, 0.1) 0%,
+      hsla(280, 0%, 87%, 0.1) 64%,
+      transparent 64%,
+      transparent 84%,
+      transparent 84%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 31% 76%,
+      hsla(280, 0%, 87%, 0.1) 0%,
+      hsla(280, 0%, 87%, 0.1) 45%,
+      transparent 45%,
+      transparent 86%,
+      transparent 86%,
+      transparent 100%
+    ),
+    linear-gradient(135deg, rgb(2, 39, 217), rgb(100, 100, 207));
   transition: all 0.3s ease-in-out;
 }
 .example-2 .icon-content a:hover {
@@ -1148,174 +1205,82 @@ ul {
 /* end social media */
 /* right card */
 /* animation on front card ------------------------*/
-.modelViewPort {
-  perspective: 1000px;
-  width: 13rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
+.loader00 {
+  height: 90px;
+  width: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
-  overflow: hidden;
 }
-.eva {
-  --EVA-ROTATION-DURATION: 4s;
-  transform-style: preserve-3d;
-  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
-}
-.head {
+.loader {
   position: relative;
-  width: 6rem;
-  height: 4rem;
-  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
-  background: linear-gradient(to right, white 45%, gray);
+  width: 108px;
+  display: flex;
+  justify-content: space-between;
 }
-.eyeChamber {
-  width: 4.5rem;
-  height: 2.75rem;
-  position: relative;
-  left: 50%;
-  top: 55%;
-  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
-  background-color: #0c203c;
-  box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
-  transform: translate(-50%, -50%);
-  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
-}
-.eye {
-  width: 1.2rem;
-  height: 1.5rem;
-  position: absolute;
+.loader::after,
+.loader::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #dbdffc;
+  background-image: radial-gradient(circle 12px, #0d161b 100%, transparent 0);
+  background-repeat: no-repeat;
   border-radius: 50%;
+  animation: eyeMove 10s infinite, blink 10s infinite;
 }
-.eye:first-child {
-  left: 12px;
-  top: 50%;
-  background: repeating-linear-gradient(
-    65deg,
-    #9bdaeb 0px,
-    #9bdaeb 1px,
-    white 2px
-  );
-  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
-  transform: translate(0, -50%) rotate(-65deg);
-}
-.eye:nth-child(2) {
-  right: 12px;
-  top: 50%;
-  background: repeating-linear-gradient(
-    -65deg,
-    #9bdaeb 0px,
-    #9bdaeb 1px,
-    white 2px
-  );
-  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
-  transform: translate(0, -50%) rotate(65deg);
-}
-.body {
-  width: 6rem;
-  height: 8rem;
-  position: relative;
-  margin-block-start: 0.25rem;
-  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
-  background: linear-gradient(to right, white 35%, gray);
-}
-.hand {
-  position: absolute;
-  left: -1.5rem;
-  top: 0.75rem;
-  width: 2rem;
-  height: 5.5rem;
-  border-radius: 40%;
-  background: linear-gradient(to left, white 15%, gray);
-  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
-  transform: rotateY(55deg) rotateZ(10deg);
-}
-.hand:first-child {
-  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite
-    alternate;
-}
-.hand:nth-child(2) {
-  left: 92%;
-  background: linear-gradient(to right, white 15%, gray);
-  transform: rotateY(55deg) rotateZ(-10deg);
-  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear
-    infinite alternate;
-}
-.scannerThing {
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 60%;
-  top: 10%;
-  border-top: 180px solid #9bdaeb;
-  border-left: 250px solid transparent;
-  border-right: 250px solid transparent;
-  transform-origin: top left;
-  mask: linear-gradient(to right, white, transparent 35%);
-  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
-}
-.scannerOrigin {
-  position: absolute;
-  width: 8px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  left: 60%;
-  top: 10%;
-  background: #9bdaeb;
-  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
-  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
-}
-@keyframes rotateRight {
-  from {
-    transform: rotateY(0deg);
+@keyframes eyeMove {
+  0%,
+  10% {
+    background-position: 0px 0px;
   }
-  to {
-    transform: rotateY(25deg);
+  13%,
+  40% {
+    background-position: -15px 0px;
   }
-}
-@keyframes moveRight {
-  from {
-    transform: translate(-50%, -50%);
+  43%,
+  70% {
+    background-position: 15px 0px;
   }
-  to {
-    transform: translate(-40%, -50%);
+  73%,
+  90% {
+    background-position: 0px 15px;
   }
-}
-@keyframes compensateRotation {
-  from {
-    transform: rotateY(55deg) rotateZ(10deg);
-  }
-  to {
-    transform: rotatey(30deg) rotateZ(10deg);
-  }
-}
-@keyframes compensateRotationRight {
-  from {
-    transform: rotateY(55deg) rotateZ(-10deg);
-  }
-  to {
-    transform: rotateY(70deg) rotateZ(-10deg);
-  }
-}
-@keyframes glow {
-  from {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  45% {
-    transform: rotate(-25deg);
-  }
-  75% {
-    transform: rotate(5deg);
-  }
+  93%,
   100% {
-    opacity: 0;
+    background-position: 0px 0px;
   }
 }
+@keyframes blink {
+  0%,
+  10%,
+  12%,
+  20%,
+  22%,
+  40%,
+  42%,
+  60%,
+  62%,
+  70%,
+  72%,
+  90%,
+  92%,
+  98%,
+  100% {
+    height: 48px;
+  }
+  11%,
+  21%,
+  41%,
+  61%,
+  71%,
+  91%,
+  99% {
+    height: 18px;
+  }
+}
+
 /* end animatio on front card */
 .card_login_container {
   height: auto;
@@ -1344,7 +1309,7 @@ ul {
   backface-visibility: hidden;
 }
 .card_login .front {
-  background-color: #01416c;
+  background: linear-gradient(90deg, rgb(60, 132, 164), rgb(148, 26, 235));
   color: white;
   display: flex;
   align-items: center;
@@ -1352,7 +1317,7 @@ ul {
   /* gap: 1d0px; */
 }
 .card_login .back {
-  background-color: #01416c;
+  background: linear-gradient(90deg, rgb(60, 132, 164), rgb(146, 26, 232));
   color: white;
   display: flex;
   align-items: center;
@@ -1552,7 +1517,7 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   animation: sliding 20s infinite;
 }
 .slide {
@@ -1780,12 +1745,12 @@ footer {
   background: #4776e6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #8e54e9,
+    #a654e9,
     #4776e6
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8e54e9,
+    #a654e9,
     #4776e6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -2000,6 +1965,9 @@ a.socialIcon:hover,
 /* copyright part ----------------*/
 .footer-container02 {
   text-align: center;
+  /* padding-top: 3px;
+  padding-bottom: 10px; */
+  padding: 10px;
 }
 /* login card-------------------------- */
 
@@ -2061,7 +2029,7 @@ a.socialIcon:hover,
   #lists {
     display: none;
   }
-  #list_icon {
+  .button00 {
     display: block;
   }
   .notification {

@@ -1,5 +1,5 @@
 var isElementVisible = false;
-let btn = document.querySelector(".check-icon");
+let btn = document.querySelector(".button00");
 btn.onclick = () => {
   var icon = document.querySelector(".nav");
   isElementVisible = !isElementVisible;
