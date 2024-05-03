@@ -45,6 +45,7 @@
         background-color: black;
         color: #fff;
         border-radius: 8px;
+        overflow: scroll;
 
     }
 </style>
@@ -81,22 +82,22 @@
         <div class="left-side" id="side">
             <div class="button-container">
                 <div class="button-list">
-                    <a class="btn-c" href="#intro">What is c </a>
-                    <a class="btn-c" href="#history-c">History of c </a>
-                    <a class="btn-c" href="#why-c">Why use c</a>
-                    <a class="btn-c" href="#features-c">Features of c </a>
-                    <a class="btn-c" href="#install-c">How to Install</a>
-                    <a class="btn-c" href="#first-c-program">Write the First Program</a>
-                    <a class="btn-c" href="#variable-c">Variable in C </a>
-                    <a class="btn-c" href="#data-type">Data Type in C </a>
-                    <a class="btn-c" href="#keywords-c">Keywords in c</a>
-                    <a class="btn-c" href="#opeartor-c">Operators</a>
-                    <a class="btn-c" href="#comment-c">Comments</a>
-                    <a class="btn-c" id="#">Format Specifier</a>
-                    <a class="btn-c" id="#">Escape Sequence</a>
-                    <a class="btn-c" id="#">ASCI Value</a>
-                    <a class="btn-c" id="#">Constant in C </a>
-
+                    <a class="btn-c" onclick="btnn()" href="#intro">What is c </a>
+                    <a class="btn-c" onclick="btnn()" href="#history-c">History of c </a>
+                    <a class="btn-c" onclick="btnn()" href="#why-c">Why use c</a>
+                    <a class="btn-c" onclick="btnn()" href="#features-c">Features of c </a>
+                    <a class="btn-c" onclick="btnn()" href="#install-c">How to Install</a>
+                    <a class="btn-c" onclick="btnn()" href="#first-c-program">Write the First Program</a>
+                    <a class="btn-c" onclick="btnn()" href="#variable-c">Variable in C </a>
+                    <a class="btn-c" onclick="btnn()" href="#data-type">Data Type in C </a>
+                    <a class="btn-c" onclick="btnn()" href="#keywords-c">Keywords in c</a>
+                    <a class="btn-c" onclick="btnn()" href="#opeartor-c">Operators</a>
+                    <a class="btn-c" onclick="btnn()" href="#comment-c">Comments</a>
+                    <a class="btn-c" onclick="btnn()" href="#format-specifier">Format Specifier</a>
+                    <a class="btn-c" onclick="btnn()" href="#Escape-Sequence">Escape Sequence</a>
+                    <a class="btn-c" onclick="btnn()" href="#ascii">ASCII Value</a>
+                    <a class="btn-c" onclick="btnn()" href="#constants">Constant in C </a>
+                    <a class="btn-c" onclick="btnn()" href="#Literals">Literals in C </a>
                 </div>
             </div>
         </div>
@@ -439,9 +440,9 @@
                     </ul>
 
                 </ol>
-               <div class="code-card">
-                <div class="box-code">
-                    <pre>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
                         #include < stdio.h >
                         int main(){
                             printf("Hello World!");
@@ -449,8 +450,8 @@
                         }
                         
                     </pre>
+                    </div>
                 </div>
-            </div>
             </div>
 
             <div class="first-c-program article" id="first-c-program">
@@ -465,9 +466,9 @@
                     </li>
 
                 </ul>
-             <div class="code-card">
-                <div class="box-code">
-                    <pre>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
                         #include < stdio.h >
                         int main(){
                             printf("Hello World!");
@@ -475,8 +476,8 @@
                         }
                         
                     </pre>
+                    </div>
                 </div>
-            </div>
 
                 <ol>
                     <li><strong>save the File </strong></li>
@@ -627,205 +628,217 @@
                             if, else).</p>
                     </li>
                 </ul>
-          
 
-            <div class="data-type" id="data-type">
-                <h2 class="h2-c-clor">Data Type in c</h2>
-                <p>In C programming, a data type is a classification that specifies which type of value a variable can
-                    hold, what operations can be performed on that value, and how the value is stored in memory. Data
-                    types in C are used to define variables, functions, and expressions. Each data type has specific
-                    characteristics such as size, range of values, and operations that can be performed on it.</p>
 
-                <div class="images"> <img src="./images/data type.jpg" alt="data types" srcset="" style="width:100%;">
-                </div>
+                <div class="data-type" id="data-type">
+                    <h2 class="h2-c-clor">Data Type in c</h2>
+                    <p>In C programming, a data type is a classification that specifies which type of value a variable
+                        can
+                        hold, what operations can be performed on that value, and how the value is stored in memory.
+                        Data
+                        types in C are used to define variables, functions, and expressions. Each data type has specific
+                        characteristics such as size, range of values, and operations that can be performed on it.</p>
 
-                <h2 class="h2-c-clor">Integer Data Type :</h2><br>
-                <div class="d-content">
-                    <p>In C++, basic data types, also called primitive data types or fundamental data types, are the
-                        building blocks for storing different kinds of data in your programs. These types are predefined
-                        by the language and provide a way to represent basic values.</p>
-                </div><br>
+                    <div class="images"> <img src="./images/data type.jpg" alt="data types" srcset=""
+                            style="width:100%;">
+                    </div>
 
-                <table>
-                    <tr>
-                        <th>Types</th>
-                        <th>Data Types</th>
-                    </tr>
-                    <tr>
-                        <td>Basic Datat Types</td>
-                        <td>int , float , char , Bolean</td>
-                    </tr>
-                </table><br>
+                    <h2 class="h2-c-clor">Integer Data Type :</h2><br>
+                    <div class="d-content">
+                        <p>In C++, basic data types, also called primitive data types or fundamental data types, are the
+                            building blocks for storing different kinds of data in your programs. These types are
+                            predefined
+                            by the language and provide a way to represent basic values.</p>
+                    </div><br>
 
-                <h2><strong>Integer Data Types are given below :</strong></h2><br>
+                    <table>
+                        <tr>
+                            <th>Types</th>
+                            <th>Data Types</th>
+                        </tr>
+                        <tr>
+                            <td>Basic Datat Types</td>
+                            <td>int , float , char , Bolean</td>
+                        </tr>
+                    </table><br>
 
-                <table>
-                    <tr>
-                        <th>Data Types</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>int</td>
-                        <td>It is Represents the integer numbers.<br><b>ex : 35, 56,34 etc.</b></td>
-                    </tr>
-                    <tr>
-                        <td>short</td>
-                        <td>It is Represents short integer numbers.<br><b>ex : short a = 12345;</b></td>
-                    </tr>
-                    <tr>
-                        <td>long</td>
-                        <td>Represents very long integer numbers<b>ex : long a = 9223372036854775807 ;</b></td>
-                    </tr>
-                    <tr>
-                        <td>unsigned int</td>
-                        <td>Represents unsigned integer numbers (non-negative values only). <b></b></td>
-                    </tr>
-                </table><br>
+                    <h2><strong>Integer Data Types are given below :</strong></h2><br>
 
-                <p><strong>float data types are given below :</strong></p><br>
+                    <table>
+                        <tr>
+                            <th>Data Types</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>int</td>
+                            <td>It is Represents the integer numbers.<br><b>ex : 35, 56,34 etc.</b></td>
+                        </tr>
+                        <tr>
+                            <td>short</td>
+                            <td>It is Represents short integer numbers.<br><b>ex : short a = 12345;</b></td>
+                        </tr>
+                        <tr>
+                            <td>long</td>
+                            <td>Represents very long integer numbers<b>ex : long a = 9223372036854775807 ;</b></td>
+                        </tr>
+                        <tr>
+                            <td>unsigned int</td>
+                            <td>Represents unsigned integer numbers (non-negative values only). <b></b></td>
+                        </tr>
+                    </table><br>
 
-                <table>
-                    <tr>
-                        <th>Data Type </th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>float</td>
-                        <td>: Represents single-precision floating-point numbers.<br><b>ex: 4.5 , 23.6 , 45.04 etc.</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>double</td>
-                        <td> Represents double-precision floating-point numbers.</td>
-                    </tr>
-                    <tr>
-                        <td>long</td>
-                        <td> Represents extended-precision floating-point numbers.</td>
-                    </tr>
-                </table><br>
+                    <p><strong>float data types are given below :</strong></p><br>
 
-                <p><strong>character data type:</strong></p><br>
-                <table>
-                    <tr>
-                        <th>Data Type</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>char</td>
-                        <td>Represents a single character.</td>
-                    </tr>
-                    <tr>
-                        <td>wchar_t</td>
-                        <td> Represents a wide character.</td>
-                    </tr>
-                    <tr>
-                        <td>char16_t</td>
-                        <td> Represents a UTF-16 character.</td>
-                    </tr>
-                    <tr>
-                        <td>char32_t</td>
-                        <td> Represents a UTF-32 character.</td>
-                    </tr>
-                </table><br>
-                <p><strong>Boolean Data Types are given below :</strong></p><br>
-                <table>
-                    <tr>
-                        <th>Data Types</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>bool</td>
-                        <td> Represents boolean values, true or false.</td>
-                    </tr>
-                </table><br>
+                    <table>
+                        <tr>
+                            <th>Data Type </th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>float</td>
+                            <td>: Represents single-precision floating-point numbers.<br><b>ex: 4.5 , 23.6 , 45.04
+                                    etc.</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td> Represents double-precision floating-point numbers.</td>
+                        </tr>
+                        <tr>
+                            <td>long</td>
+                            <td> Represents extended-precision floating-point numbers.</td>
+                        </tr>
+                    </table><br>
 
-                <h2 class="h2-c-clor">Derived Data Types</h2>
+                    <p><strong>character data type:</strong></p><br>
+                    <table>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>char</td>
+                            <td>Represents a single character.</td>
+                        </tr>
+                        <tr>
+                            <td>wchar_t</td>
+                            <td> Represents a wide character.</td>
+                        </tr>
+                        <tr>
+                            <td>char16_t</td>
+                            <td> Represents a UTF-16 character.</td>
+                        </tr>
+                        <tr>
+                            <td>char32_t</td>
+                            <td> Represents a UTF-32 character.</td>
+                        </tr>
+                    </table><br>
+                    <p><strong>Boolean Data Types are given below :</strong></p><br>
+                    <table>
+                        <tr>
+                            <th>Data Types</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>bool</td>
+                            <td> Represents boolean values, true or false.</td>
+                        </tr>
+                    </table><br>
 
-                <p>
-                    In C programming, a derived data type is a type that is derived from the fundamental data types
-                    offered by the language. These fundamental data types include int, char, float, double, etc. Derived
-                    data types are created using the fundamental data types, other derived data types, or a combination
-                    of both. Some examples of derived data types in C include:</p><br>
+                    <h2 class="h2-c-clor">Derived Data Types</h2>
 
-                <ul>
-                    <div>
-                        <li> <b>Array :- </b>
-                            <p>Array are collections of elements of the same data type. They are derived from
-                                fundamental data types and can store multiple values of that type in contiguous memory
-                                locations.</p>
-                        </li>
+                    <p>
+                        In C programming, a derived data type is a type that is derived from the fundamental data types
+                        offered by the language. These fundamental data types include int, char, float, double, etc.
+                        Derived
+                        data types are created using the fundamental data types, other derived data types, or a
+                        combination
+                        of both. Some examples of derived data types in C include:</p><br>
 
-                        <div class="code-card">
-                            <div class="box-code">
-                                <pre>
+                    <ul>
+                        <div>
+                            <li> <b>Array :- </b>
+                                <p>Array are collections of elements of the same data type. They are derived from
+                                    fundamental data types and can store multiple values of that type in contiguous
+                                    memory
+                                    locations.</p>
+                            </li>
+
+                            <div class="code-card">
+                                <div class="box-code">
+                                    <pre>
                                     int myArray[5]; // Array of integers
                                     
                                 </pre>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-            </div><br>
+                </div><br>
 
-            <div>
-                <li><b> Pointer :- </b>
-                    <p>
-                        Pointer are variables that store memory addresses of other variables. They are derived from
-                        fundamental data types and are extensively used in C for dynamic memory allocation and
-                        manipulation
-                    </p>
-                </li>
-                <div class="code-card">
-                    <div class="box-code">
-                        <pre>
+                <div>
+                    <li><b> Pointer :- </b>
+                        <p>
+                            Pointer are variables that store memory addresses of other variables. They are derived from
+                            fundamental data types and are extensively used in C for dynamic memory allocation and
+                            manipulation
+                        </p>
+                    </li>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
                                     int *ptr; // Pointer to an integer
                                 </pre>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <li><b>Function :- </b>
-                    <p>
-                        In C programming, a function is a self-contained block of code that performs a specific task.
-                        Functions are fundamental building blocks in C programming as they allow you to break down your
-                        program into smaller, more manageable pieces, making it easier to understand, debug, and
-                        maintain. Here's the basic structure of a function in C:</p>
-                </li>
+                <div>
+                    <li><b>Function :- </b>
+                        <p>
+                            In C programming, a function is a self-contained block of code that performs a specific
+                            task.
+                            Functions are fundamental building blocks in C programming as they allow you to break down
+                            your
+                            program into smaller, more manageable pieces, making it easier to understand, debug, and
+                            maintain. Here's the basic structure of a function in C:</p>
+                    </li>
 
-                <div class="code-card">
-                    <div class="box-code">
-                        <pre>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
                                     return_type function_name(parameter_list) {
                                         // Function body
                                         // Statements
                                         // Return statement (optional)
                                     }
                                 </pre>
+                        </div>
                     </div>
+
                 </div>
+                </ul><br>
 
-            </div>
-            </ul><br>
+                <h2 class="h2-c-clor">User Defined Data Types :</h2><br>
+                <p>
+                    In C programming, user-defined data types allow programmers to create their own data types based on
+                    existing primitive data types such as int, float, char, etc. These user-defined data types can
+                    simplify
+                    code, improve readability, and enhance program organization. There are several ways to define
+                    user-defined data types in C, including structures, typedef, and enumerations.</p><br>
 
-            <h2 class="h2-c-clor">User Defined Data Types :</h2><br>
-            <p>
-                In C programming, user-defined data types allow programmers to create their own data types based on
-                existing primitive data types such as int, float, char, etc. These user-defined data types can simplify
-                code, improve readability, and enhance program organization. There are several ways to define
-                user-defined data types in C, including structures, typedef, and enumerations.</p><br>
-
-            <ul>
-                <div>
-                    <li>
-                        <b>Structure : -</b>
-                        <p> Structures allow you to group together variables of different data types under a single
-                            name. They are derived from fundamental data types and can be used to create complex data
-                            structures.</p>
-                    </li>
-                    <div class="code-card">
-                        <div class="box-code">
-                            <pre>
+                <ul>
+                    <div>
+                        <li>
+                            <b>Structure : -</b>
+                            <p> Structures allow you to group together variables of different data types under a single
+                                name. They are derived from fundamental data types and can be used to create complex
+                                data
+                                structures.</p>
+                        </li>
+                        <div class="code-card">
+                            <div class="box-code">
+                                <pre>
                                     struct Point {
                                         int x;
                                         int y;
@@ -833,20 +846,21 @@
                                     
                                     struct Point p1; // Structure variable
                                 </pre>
+                            </div>
                         </div>
-                    </div>
-                </div><br>
+                    </div><br>
 
-                <div>
-                    <li><b>Union :- </b>
-                        <p>Unions allow you to define a data type that can hold different types of data members, but
-                            only one member can contain a value at any given time. It is derived from fundamental data
-                            types and is useful in situations where memory efficiency is crucial.</p>
-                    </li>
-                </div>
-                <div class="code-card">
-                    <div class="box-code">
-                        <pre>
+                    <div>
+                        <li><b>Union :- </b>
+                            <p>Unions allow you to define a data type that can hold different types of data members, but
+                                only one member can contain a value at any given time. It is derived from fundamental
+                                data
+                                types and is useful in situations where memory efficiency is crucial.</p>
+                        </li>
+                    </div>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
                                     union Data {
                                         int i;
                                         float f;
@@ -854,16 +868,17 @@
                                     
                                     union Data d;
                                 </pre>
-                    </div>
-                </div><br>
+                        </div>
+                    </div><br>
 
-                <div>
-                    <li><b>Enumerations (enums) :- </b> Enumerations are user-defined data types that consist of named
-                        constants, which are essentially a list of related integer values. They are derived from the
-                        integer data type and provide a way to define symbolic names for integer constants.</li>
-                    <div class="code-card">
-                        <div class="box-code">
-                            <pre>
+                    <div>
+                        <li><b>Enumerations (enums) :- </b> Enumerations are user-defined data types that consist of
+                            named
+                            constants, which are essentially a list of related integer values. They are derived from the
+                            integer data type and provide a way to define symbolic names for integer constants.</li>
+                        <div class="code-card">
+                            <div class="box-code">
+                                <pre>
                                         enum Color {
                                             RED,
                                             GREEN,
@@ -872,111 +887,111 @@
                                         
                                         enum Color c;
                                     </pre>
+                            </div>
                         </div>
-                    </div>
-            </ul><br>
+                </ul><br>
 
-            <p><strong>Let's see the basic data types. It size is given according to 32 bit OS.</strong></p><br>
+                <p><strong>Let's see the basic data types. It size is given according to 32 bit OS.</strong></p><br>
 
-            <table>
-                <tr>
-                    <th>Data Type</th>
-                    <th>Size of Memory</th>
-                    <th>Range</th>
-                </tr>
-                <tr>
-                    <td>char</td>
-                    <td>1 byte</td>
-                    <td>-128 to 127</td>
-                </tr>
-                <tr>
-                    <td>singed char</td>
-                    <td>1 byte</td>
-                    <td>-128 to 127</td>
-                </tr>
-                <tr>
-                    <td>unsinged char</td>
-                    <td>1 byte</td>
-                    <td>0 to 127</td>
-                </tr>
-                <tr>
-                    <td>shot</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>signed short</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>unsigned short</td>
-                    <td>2 byte</td>
-                    <td>0 to 32,767</td>
-                </tr>
+                <table>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Size of Memory</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>1 byte</td>
+                        <td>-128 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>singed char</td>
+                        <td>1 byte</td>
+                        <td>-128 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>unsinged char</td>
+                        <td>1 byte</td>
+                        <td>0 to 127</td>
+                    </tr>
+                    <tr>
+                        <td>shot</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>signed short</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned short</td>
+                        <td>2 byte</td>
+                        <td>0 to 32,767</td>
+                    </tr>
 
-                <tr>
-                    <td>int</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>signed int</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>unsigned int</td>
-                    <td>2 byte</td>
-                    <td>0 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>short int</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>signed short int</td>
-                    <td>2 byte</td>
-                    <td>-32,768 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>unsigned short int</td>
-                    <td>2 byte</td>
-                    <td>0 to 32,767</td>
-                </tr>
-                <tr>
-                    <td>long int</td>
-                    <td>4 byte</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>signed long int</td>
-                    <td>4 byte</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>unsigned long int</td>
-                    <td>4 byte</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>float</td>
-                    <td>4 byte</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>double</td>
-                    <td>8 byte</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>long double</td>
-                    <td>10 byte</td>
-                    <td></td>
-                </tr>
-            </table>
-        </div><br>
+                    <tr>
+                        <td>int</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>signed int</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned int</td>
+                        <td>2 byte</td>
+                        <td>0 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>short int</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>signed short int</td>
+                        <td>2 byte</td>
+                        <td>-32,768 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>unsigned short int</td>
+                        <td>2 byte</td>
+                        <td>0 to 32,767</td>
+                    </tr>
+                    <tr>
+                        <td>long int</td>
+                        <td>4 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>signed long int</td>
+                        <td>4 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>unsigned long int</td>
+                        <td>4 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>4 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>8 byte</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>long double</td>
+                        <td>10 byte</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div><br><hr>
 
 
             <div class="keywords-c" id="keywords-c">
@@ -990,201 +1005,479 @@
                 <p>They are given below :- </p>
 
                 <table>
-                   <tr>
-                    <td>auto</td>
-                    <td>double</td>
-                    <td>int </td>
-                    <td>struct</td>
-                   </tr>
-                   <tr>
-                    <td>break</td>
-                    <td>else</td>
-                    <td>long</td>
-                    <td>swithc</td>
-                   </tr>
-                   <tr>
-                    <td>case</td>
-                    <td>enum</td>
-                    <td>registre</td>
-                    <td>typedef</td>
-                   </tr>
-                   <tr>
-                    <td>char</td>
-                    <td>return</td>
-                    <td>extern</td>
-                    <td>union</td>
-                   </tr>
-                   <tr>
-                    <td>const</td>
-                    <td>float</td>
-                    <td>short</td>
-                    <td>unsinged</td>
-                   </tr>
-                   <tr>
-                    <td>continue</td>
-                    <td>for</td>
-                    <td>signed</td>
-                    <td>void</td>
-                   </tr>
-                   <tr>
-                    <td>default</td>
-                    <td>goto</td>
-                    <td>sizeof</td>
-                    <td>volatile</td>
-                   </tr>
-                   <tr>
-                    <td>do</td>
-                    <td>if</td>
-                    <td>static</td>
-                    <td>while</td>
-                   </tr>
+                    <tr>
+                        <td>auto</td>
+                        <td>double</td>
+                        <td>int </td>
+                        <td>struct</td>
+                    </tr>
+                    <tr>
+                        <td>break</td>
+                        <td>else</td>
+                        <td>long</td>
+                        <td>swithc</td>
+                    </tr>
+                    <tr>
+                        <td>case</td>
+                        <td>enum</td>
+                        <td>registre</td>
+                        <td>typedef</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>return</td>
+                        <td>extern</td>
+                        <td>union</td>
+                    </tr>
+                    <tr>
+                        <td>const</td>
+                        <td>float</td>
+                        <td>short</td>
+                        <td>unsinged</td>
+                    </tr>
+                    <tr>
+                        <td>continue</td>
+                        <td>for</td>
+                        <td>signed</td>
+                        <td>void</td>
+                    </tr>
+                    <tr>
+                        <td>default</td>
+                        <td>goto</td>
+                        <td>sizeof</td>
+                        <td>volatile</td>
+                    </tr>
+                    <tr>
+                        <td>do</td>
+                        <td>if</td>
+                        <td>static</td>
+                        <td>while</td>
+                    </tr>
                 </table><br>
-                <p>These keywords serve various purposes in the C language, such as defining control flow (e.g., if, else, switch, while), declaring data types (e.g., int, float, char), defining storage classes (e.g., auto, static, register), and specifying other language constructs (e.g., return, break, continue). It's important to note that these keywords are case-sensitive, meaning that they must be written exactly as shown above to be recognized by the compiler. Additionally, C99 introduced a few additional keywords, such as _Bool, _Complex, and _Imaginary.</p>
+                <p>These keywords serve various purposes in the C language, such as defining control flow (e.g., if,
+                    else, switch, while), declaring data types (e.g., int, float, char), defining storage classes (e.g.,
+                    auto, static, register), and specifying other language constructs (e.g., return, break, continue).
+                    It's important to note that these keywords are case-sensitive, meaning that they must be written
+                    exactly as shown above to be recognized by the compiler. Additionally, C99 introduced a few
+                    additional keywords, such as _Bool, _Complex, and _Imaginary.</p>
 
-            </div><br>
+            </div><br><hr>
 
             <div class="opeartor-c" id="opeartor-c">
                 <h2 class="h2-c-clor">Opeators in C </h2><br>
-                 <div>
-                     <p>
-                         In C programming, an operator is a symbol that represents a specific operation to be performed
-                         on one or more operands. Operators are fundamental to performing various computations and
-                         manipulations in C code. Here are some common types of operators in C</p>
-                 </div>
- 
-                 <div>
-                     <ul>
-                         <li> <b>Arithmetic Operators: </b>
-                             <p>Used to perform arithmetic operations such as addition, subtraction, multiplication,
-                                 division, and modulus.</p>
- 
-                         <li>`+` (Addition) </li>
-                         <li>`-` (Subtraction)</li>
-                         <li>`*` (Multiplaction)</li>
-                         <li>`/` (Division)</li>
-                         <li>`%` (Modulus)</li>
-                         </li><br>
- 
-                         <li> <b>Assignment Operators: </b>
-                             <p>Assignment Operators Used to assign values to variables.
-                             </p>
-                          
-                         <li>`=` (Assignment) </li>
-                         <li>`+=` (Addition Assignment)</li>
-                         <li>`-=`(Subtraction Assignment)</li>
-                         <li>`*=` (Multiplaction Assignment)</li>
-                         <li>`/=` (Division Assignment)</li>
-                         <li>`%=` (Modulus Assignment)</li>
-                         </li>
- 
-                         <br>
- 
- 
-                         <li> <b>Comparison Operators: </b>
-                             <p>Comparison Operators Used to compare two values.
-                             </p>
-                         
-                         <li>`==` (Equal to) </li>
-                         <li>`!=` (Not Equal to)</li>
-                         <li>`<`(Greaterthan)< /li>
-                         <li>`>` (Lessthan)</li>
-                         <li>`<=` (Greaterthan equal to)</li>
-                         <li>`>=` (Less than equal to)</li>
-                         </li> <br>
- 
- 
-                         <li> <b>Logical Operators: </b>
-                             <p>Logical Operators Used to perform logical operations.</p>
-                           
-                         <li>`&&` (Logical AND) </li>
-                         <li>`||` (Logical OR)</li>
-                         <li>`!`(Logical NOT)</li>
- 
-                         </li><br>
- 
-                
-                     <li> <b>Bitwise Operators: </b>
-                         <p>Bitwise Operators Used to perform logical operations.</p>
-                         <div>
-                     <li>`&` (Bitwise AND) </li>
-                     <li>`|` (Bitwise OR)</li>
-                     <li>`^`(Bitwise XOR)</li>
-                     <li>`~`(Bitwise NOT)</li>
-                     <li>`<<`(Left shift)</li>
-                     <li>`>>`(Right shift)</li>
-                     </li><br>
- 
-                     <li> <b>Unary Operators: </b>
-                         <p>Unary Operators that operate on a single operand.</p>
-                         <div>
-                     <li>`+` (Unary Add) </li>
-                     <li>`-` (Unary Subtract)</li>
-                     <li>`++`(Increment)</li>
-                     <li>`--`(Decrement)</li>
-                     </li>
- 
-                     
-                     <li> <b>Ternary  Operators: </b>
-                         <p>Ternary Operators Conditional operator ? : used for decision making</p>
-                         
-                     <li>condition ? expression1 : expression2 </li>
-              
-                     </li><br>
- 
-                     <li> <b>Miscellaneous Operators: </b>
-                         
-                     <li>sizeof (Returns the size of a variable or data type) </li>
-                     <li>& (Address-of operator)</li>
-                     <li>* (Pointer dereference operator)</li>
-                     </li>
-                 </li>
-                 </ul>
-              </div>
-             </div><br>
- 
-             <div class="comment-c" id="comment-c">
-                 <h2 class="h2-c-clor">Comments in C </h2><br>
-                 <div>
-                     <p>
-                         In C programming, comments are used to annotate code to make it more understandable to humans without affecting the functionality of the program. Comments are ignored by the compiler during the compilation process. There are two main types of comments in C:</p>
-                 </div>
-                 <div>
-                     <div>
-                     <p><b>Single-line comments : </b>These comments are used to annotate a single line of code.</p>
-                     <div class="code-card">
-                         <div class="box-code">
-                             <pre>
+                <div>
+                    <p>
+                        In C programming, an operator is a symbol that represents a specific operation to be performed
+                        on one or more operands. Operators are fundamental to performing various computations and
+                        manipulations in C code. Here are some common types of operators in C</p>
+                </div>
+
+                <div>
+                    <ul>
+                        <li> <b>Arithmetic Operators: </b>
+                            <p>Used to perform arithmetic operations such as addition, subtraction, multiplication,
+                                division, and modulus.</p>
+
+                        <li>`+` (Addition) </li>
+                        <li>`-` (Subtraction)</li>
+                        <li>`*` (Multiplaction)</li>
+                        <li>`/` (Division)</li>
+                        <li>`%` (Modulus)</li>
+                        </li><br>
+
+                        <li> <b>Assignment Operators: </b>
+                            <p>Assignment Operators Used to assign values to variables.
+                            </p>
+
+                        <li>`=` (Assignment) </li>
+                        <li>`+=` (Addition Assignment)</li>
+                        <li>`-=`(Subtraction Assignment)</li>
+                        <li>`*=` (Multiplaction Assignment)</li>
+                        <li>`/=` (Division Assignment)</li>
+                        <li>`%=` (Modulus Assignment)</li>
+                        </li>
+
+                        <br>
+
+
+                        <li> <b>Comparison Operators: </b>
+                            <p>Comparison Operators Used to compare two values.
+                            </p>
+
+                        <li>`==` (Equal to) </li>
+                        <li>`!=` (Not Equal to)</li>
+                        <li>`<`(Greaterthan)< /li>
+                        <li>`>` (Lessthan)</li>
+                        <li>`<=` (Greaterthan equal to)</li>
+                        <li>`>=` (Less than equal to)</li>
+                        </li> <br>
+
+
+                        <li> <b>Logical Operators: </b>
+                            <p>Logical Operators Used to perform logical operations.</p>
+
+                        <li>`&&` (Logical AND) </li>
+                        <li>`||` (Logical OR)</li>
+                        <li>`!`(Logical NOT)</li>
+
+                        </li><br>
+
+
+                        <li> <b>Bitwise Operators: </b>
+                            <p>Bitwise Operators Used to perform logical operations.</p>
+                            <div>
+                        <li>`&` (Bitwise AND) </li>
+                        <li>`|` (Bitwise OR)</li>
+                        <li>`^`(Bitwise XOR)</li>
+                        <li>`~`(Bitwise NOT)</li>
+                        <li>`<<`(Left shift)</li>
+                        <li>`>>`(Right shift)</li>
+                        </li><br>
+
+                        <li> <b>Unary Operators: </b>
+                            <p>Unary Operators that operate on a single operand.</p>
+                            <div>
+                        <li>`+` (Unary Add) </li>
+                        <li>`-` (Unary Subtract)</li>
+                        <li>`++`(Increment)</li>
+                        <li>`--`(Decrement)</li>
+                        </li>
+
+
+                        <li> <b>Ternary Operators: </b>
+                            <p>Ternary Operators Conditional operator ? : used for decision making</p>
+
+                        <li>condition ? expression1 : expression2 </li>
+
+                        </li><br>
+
+                        <li> <b>Miscellaneous Operators: </b>
+
+                        <li>sizeof (Returns the size of a variable or data type) </li>
+                        <li>& (Address-of operator)</li>
+                        <li>* (Pointer dereference operator)</li>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div><br><hr>
+
+            <div class="comment-c" id="comment-c">
+                <h2 class="h2-c-clor">Comments in C </h2><br>
+                <div>
+                    <p>
+                        In C programming, comments are used to annotate code to make it more understandable to humans
+                        without affecting the functionality of the program. Comments are ignored by the compiler during
+                        the compilation process. There are two main types of comments in C:</p>
+                </div>
+                <div>
+                    <div>
+                        <p><b>Single-line comments : </b>These comments are used to annotate a single line of code.</p>
+                        <div class="code-card">
+                            <div class="box-code">
+                                <pre>
                                  // This is a single-line comment
                                  int x = 5; // Initializing variable x
                          </pre>
-                         </div>
-                     </div>
+                            </div>
+                        </div>
                     </div><br>
- 
+
                     <div>
-                     <p><b>Multi-line comments:</b>These comments can span multiple lines and are enclosed within /* and */.</p>
-                     <div class="code-card">
-                         <div class="box-code">
-                             <pre>
+                        <p><b>Multi-line comments:</b>These comments can span multiple lines and are enclosed within /*
+                            and */.</p>
+                        <div class="code-card">
+                            <div class="box-code">
+                                <pre>
                                  /* This is a
                                  multi-line comment */
                               int y = 10; /* Initializing variable y */
                          </pre>
-                         </div>
-                     </div>
+                            </div>
+                        </div>
                     </div><br>
- 
-                 </div>
-             </div>
- 
- 
- 
- 
+                </div><hr>
+
+
+                <div class="format-specifier" id="format-specifier">
+                    <h2 class="h2-c-clor">format-specifier in C </h2><br>
+                    <p>
+
+                        In C programming, a format specifier is a special character that specifies the type of data to
+                        be input or output during input/output operations, such as printing to the screen or reading
+                        from a file. Format specifiers are used with functions like printf() and scanf() to tell the
+                        compiler how to interpret the data.
+                    </p>
+                    <p><b>Here are some common format specifiers in C:</b></p>
+                    <div>
+                        <ul>
+                            <li><strong>%d:</strong> Represents an integer value.</li>
+                            <li><strong>%f:</strong> Represents a floating-point value.</li>
+                            <li><strong>%c:</strong> Represents a single character</li>
+                            <li><strong>%s:</strong> Represents a string of characters.</li>
+                            <li><strong>%p:</strong> Represents a pointer value.</li>
+                            <li><strong>%x </strong>or %X: Represents an unsigned hexadecimal integer (lowercase or
+                                uppercase).</li>
+                        </ul>
+
+                    </div><br>
+                    <p>For example, in a printf() statement, if you want to print an integer variable num, you would use
+                        %d as the format specifier like this:</p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                int num = 10;
+                                printf("The value of num is: %d\n", num);
+                     </pre>
+                        </div>
+                    </div>
+                    <p>For example, in a scanf() to read an integer value, you would use %d as the format specifier:</p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                int num;
+                                scanf("%d", &num);
+                     </pre>
+                        </div>
+                    </div>
+                </div><hr>
+
+                <div class="Escape Sequence" id="Escape-Sequence">
+                    <h2 class="h2-c-clor">Escape Sequence in C </h2><br>
+                    <p>
+                        In C programming, an escape sequence is a sequence of characters that begins with a backslash \
+                        and is followed by one or more characters. Escape sequences are used to represent characters
+                        that are difficult or impossible to represent directly in a string or character constant.
+                    </p>
+                    <p><b>Here are some common escape sequences in C:</b></p>
+                    <div>
+                        <ul>
+                            <li><strong>\n:</strong> Newline character. Causes the cursor to move to the beginning of
+                                the next line.</li>
+                            <li><strong>\t:</strong> Tab character. Causes horizontal tabulation (indentation).</li>
+                            <li><strong>\b:</strong> Backspace character. Causes the cursor to move back one position.
+                            </li>
+                            <li><strong>\r:</strong> Carriage return. Causes the cursor to move to the beginning of the
+                                current line..</li>
+                            <li><strong>\\:</strong> Backslash character itself.</li>
+                            <li><strong>\':</strong> Single quote character.</li>
+                            <li><strong>\":</strong> Double quote character.</li>
+                            <li><strong>\0:</strong> Null character. Represents the null terminator character used to
+                                terminate strings.</li>
+                            <li><strong>\xH</strong>H: Hexadecimal escape sequence. Represents the character with the
+                                hexadecimal value HH.</li>
+                        </ul>
+
+                    </div><br>
+                    <p>Here's an example demonstrating the use of escape sequences:</p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                #include <stdio.h>
+
+                                    int main() {
+                                        printf("Hello\tworld!\n");
+                                        printf("This is a backslash: \\ \n");
+                                        printf("This is a double quote: \" \n");
+                                        printf("This is a single quote: \' \n");
+                                        printf("This is a bell: \a \n");
+                                        return 0;
+                                    }
+                     </pre>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><strong>\t </strong>is used to insert a tab between "Hello" and "world!".</li>
+                        <li><strong>\\ </strong>is used to print a single backslash.</li>
+                        <li><strong>\" </strong>and \' are used to print double and single quotes, respectively.</li>
+                        <li><strong>\a </strong>is used to produce an audible alert (system dependent).</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="ascii" id="ascii">
+                <h2 class="h2-c-clor">ASCII Value in C </h2><br>
+                <p>In C programming, you can represent characters using their ASCII (American Standard Code for
+                    Information Interchange) values. ASCII is a standard character encoding scheme that assigns
+                    numerical values to characters, including letters, digits, punctuation marks, and control
+                    characters. </p><br>
+                <p>To represent a character using its ASCII value, you can use the integer value of the character
+                    directly in your code. For example:
+
+                </p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                            char ch = 'A';
+                            int ascii_value = ch;  // Assigns the ASCII value of 'A' to ascii_value
+                            printf("The ASCII value of %c is %d\n", ch, ascii_value);
+                 </pre>
+                    </div>
+                </div>
+                <p>This code will output:</p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                                The ASCII value of A is 65
+                     </pre>
+                    </div>
+                </div>
+                <p>Here, the character 'A' has an ASCII value of 65. You can use this approach to find the ASCII value
+                    of any character.</p>
+                <p>Conversely, if you have an ASCII value and you want to get the corresponding character, you can
+                    simply assign the ASCII value to a character variable:</p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                                    int ascii_value = 65;
+                                    char ch = ascii_value;  // Assigns the character corresponding to ASCII value 65 ('A') to ch
+                                    printf("The character corresponding to ASCII value %d is %c\n", ascii_value, ch);
+                         </pre>
+                    </div>
+                </div>
+                <p>This code will output:</p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                                    The character corresponding to ASCII value 65 is A
+                         </pre>
+                    </div>
+                </div>
+            </div>
+             <hr>
+
+            <div class="constants" id="constants">
+                <h2 class="h2-c-clor">constants in C </h2><br>
+                <p>
+                    In C programming, constants are fixed values that do not change during the execution of a program. Constants can be of various types, including integer constants, floating-point constants, character constants, and string constants.</p>
+                    <p><b>Here are some examples of constants in C:</b></p>
+                    <p>1.<strong>Integer Constants:</strong> </p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                const int MAX_SIZE = 100;
+                                #define MAX_SIZE 100
+                        </div>
+                    </div>
+                    <p>Both <b>const </b>and <b>> #define </b> be used to define integer constants. const is a keyword used to define a constant variable, while #define is a preprocessor directive used to define symbolic constants.
+
+                    </p><br>
+                    <p>2.<strong>Floating-Point Constants::</strong> </p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                const float PI = 3.14159;
+
+                        </div>
+                    </div>
+                    <p>This defines a constant float value for PI.
+                    </p><br>
+                    <p>3.<strong>Character Constants:</strong> </p>
+                    <div class="code-card">
+                        <div class="box-code">
+                            <pre>
+                                const char NEWLINE = '\n';
+                                #define NEWLINE '\n'
+
+                        </div>
+                    </div>
+                    <p>These define constants for special characters like newline.
+                    </p><br>
+                    <p>These define string constants. In the first example, const char * declares a pointer to a constant character array, while in the second example, #define creates a macro for the string.</p><br>
+                    <p>Constants are useful for making code more readable, maintainable, and less error-prone, as they allow you to assign meaningful names to values that should not change during program execution. Using constants also facilitates easy modification of values in a program by changing the value at a single location, rather than searching and replacing multiple occurrences throughout the code.</p>
+                    
+
+            </div>    
+              <hr>
+            <div class="Literals" id="Literals">
+                <h2 class="h2-c-clor">Literals in C </h2><br>
+                <p>
+                    In C programming, literals are the constant values that are used directly in the code. They represent fixed values that do not change during the execution of the program. Literals can be of various types, including integer literals, floating-point literals, character literals, string literals, and boolean literals.</p>
+                <p><b>Here are some examples of literals in C:</b></p>
+                <p><strong>1 . Integer Literals:</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            int num = 10;
+
+                    </div>
+                </div>
+                <p>Here,<b> 10 </b>is an integer literal.</p>
+                <p><strong>2 . Floating-Point Literals:</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            float pi = 3.14;
+
+                    </div>
+                </div>
+                <p>Here,<b> 3.14 </b>is a floating-point literal.</p>
+                <p><strong>3 . Character Literals:</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            char ch = 'A';
+
+                    </div>
+                </div>
+                <p>Here,<b>A </b>is an character literal.</p>
+                <p><strong>4 . String Literals</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            char *str = "Hello, world!";
+
+                    </div>
+                </div>
+                <p>Here,<b> Hello, world! </b>is an String Literals.</p>
+                <p><strong>5 . Boolean Literals (C99 and later):</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            _Bool b = 1; // true
+
+                    </div>
+                </div>
+                <p>In C99 and later <b> _Bool </b>is the built-in data type for boolean values. <b>1</b> represents true, and 0 represents false.</p>
+                <p><strong>3 . Hexadecimal and Octal Literals:</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            int hex = 0xA; // Hexadecimal literal
+                            int oct = 012; // Octal literal
+
+                    </div>
+                </div>
+                <p>Here, <b>0xA </b> is a hexadecimal literal (equivalent to 10 in decimal), and<b> 012 </b>is an octal literal (equivalent to 10 in decimal).</p>
+                <p><strong>7 . Scientific Notation for Floating-Point Literals:</strong></p>
+                <div class="code-card">
+                    <div class="box-code">
+                        <pre>
+                        
+                            float scientific = 1.23e3;
+
+                    </div>
+                </div>
+                <p>Here, <b>1.23e3</b>represents 1.23 multiplied by 10 raised to the power of 3 (1230.0).</p>
+            </div>    
+
+            </div>    
 
 
 
 
-        </div>
+
+
+        </div> <!-- //end line for center -->
 
 
 
@@ -1204,7 +1497,9 @@
         </div>
 
 
-        
+
+
+
 
 
     </main>
@@ -1225,6 +1520,15 @@
 
 </script>
 
+<script>
+    let menuleft = document.getElementById("side")
+    function btnn() {
+        if (menuleft.style.display == "block") {
+            menuleft.style.display = "none"
+        }
+
+    }
+</script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
