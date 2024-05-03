@@ -2221,12 +2221,10 @@ strong{
     position: absolute;
     top: 0;
     display: none;
-    left: 20%;
+    left: 0%;
     margin-top: 0px;
   }
-  .code-card{
-    overflow:scroll;
-  }
+
   .code-card::-webkit-scrollbar{
     display: block;
   }
@@ -2240,7 +2238,7 @@ strong{
     
     z-index: 100;
 
-    background-color: cadetblue;
+  
     border-radius: 50%;
     
     opacity: 0.7;
